@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tj.mapper.FavoriteMapper">
+
+	<resultMap type="house" id="baseHouse">
+		<id column="hid" property="hid"/>
+		<association property="province" column="provid" javaType="province" select="com.tj.mapper.ProvinceMapper.findByPid"></association>
+		<association property="city" column="cityid" javaType="city" select="com.tj.mapper.CityMapper.findByCid"></association>
+		<association property="user" column="uid" javaType="user" select="com.tj.mapper.UserMapper.findById"></association>
+		<collection property="noticelst" column="hid" ofType="com.tj.po.Livenotice" select="com.tj.mapper.LivenoticeMapper.findByHid">
+			<id column="lnid" property="lnid"></id>
+		</collection>
+		<collection property="costlst" column="hid" ofType="com.tj.po.Extracost" select="com.tj.mapper.ExtracostMapper.findByHid">
+			<id column="ecid" property="ecid"></id>
+		</collection>
+		<collection property="imglst" column="hid" ofType="com.tj.po.HouseImg" select="com.tj.mapper.HouseimgMapper.findByHid">
+			<id column="id" property="id"></id>
+		</collection>
+		<collection property="servicelst" column="hid" ofType="com.tj.po.ServiceItem" select="com.tj.mapper.ServiceItemMapper.getItemsByHid">
+			<id column="id" property="id"></id>
+		</collection>
+		<collection property="ty1lst" column="hid" ofType="com.tj.po.ServiceItem" select="com.tj.mapper.ServiceItemMapper.getType1">
+			<id column="id" property="id"></id>
+		</collection>
+		<collection property="ty2lst" column="hid" ofType="com.tj.po.ServiceItem" select="com.tj.mapper.ServiceItemMapper.getType2">
+			<id column="id" property="id"></id>
+		</collection>
+		<collection property="ty3lst" column="hid" ofType="com.tj.po.ServiceItem" select="com.tj.mapper.ServiceItemMapper.getType3">
+			<id column="id" property="id"></id>
+		</collection>
+		<collection property="ty4lst" column="hid" ofType="com.tj.po.ServiceItem" select="com.tj.mapper.ServiceItemMapper.getType4">
+			<id column="id" property="id"></id>
+		</collection>
+		<collection property="ty5lst" column="hid" ofType="com.tj.po.ServiceItem" select="com.tj.mapper.ServiceItemMapper.getType5">
+			<id column="id" property="id"></id>
+		</collection>
+		<collection property="ty6lst" column="hid" ofType="com.tj.po.ServiceItem" select="com.tj.mapper.ServiceItemMapper.getType6">
+			<id column="id" property="id"></id>
+		</collection>
+		<collection property="ty7lst" column="hid" ofType="com.tj.po.ServiceItem" select="com.tj.mapper.ServiceItemMapper.getType7">
+			<id column="id" property="id"></id>
+		</collection>
+		<collection property="ty8lst" column="hid" ofType="com.tj.po.ServiceItem" select="com.tj.mapper.ServiceItemMapper.getType8">
+			<id column="id" property="id"></id>
+		</collection>
+	</resultMap>
+	
+	<select id="findFavsByUid" parameterType="int" resultType="int">
+		SELECT hid FROM favorite WHERE uid=#{uid}
+	</select>
+	
+	<insert id="add" parameterType="favorite">
+		insert into favorite(uid,hid) values(#{uid},#{hid})
+	</insert>
+	
+	<delete id="delete" parameterType="favorite">
+		delete from favorite where uid=#{uid} and hid=#{hid}
+	</delete>
+	
+	<select id="findFavsHouselist" parameterType="int" resultMap="baseHouse">
+		SELECT h.* FROM USER u,favorite f,house h WHERE u.`uid`=f.`uid` AND h.`hid`=f.`hid` AND f.`uid`=#{uid}
+	</select>
+</mapper>

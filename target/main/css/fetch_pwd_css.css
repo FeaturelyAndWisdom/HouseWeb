@@ -1,0 +1,368 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/body01.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #ebebeb;
+  font: normal 12px/1.5 "Helvetica Neue", "Microsoft Yahei", Tahoma, Arial;
+  color: #fff;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.wrap-large {
+  width: 1190px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.back-home {
+  line-height: 60px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+}
+.back-home .link-btn {
+  margin: 0;
+  padding: 0 0 0 14px;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+}
+.back-home .link-btn:after {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  content: '';
+  width: 7px;
+  height: 12px;
+  background: url(../img/back.png) no-repeat;
+}
+
+.hd-box {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.hd-box .site-logo {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 292px;
+  height: 114px;
+  background: url(../img/tujia-log.png) no-repeat;
+}
+
+.page-cont {
+  width: 680px;
+  margin: 30px auto 0;
+  padding: 30px 40px;
+  background: url(../img/transparent.png);
+  overflow: hidden;
+  color: #b4b4b4;
+}
+.page-cont .main-cont {
+  float: left;
+  width: 360px;
+  margin: 0;
+  padding: 0;
+  border-right: 1px dashed #555;
+}
+.page-cont .main-cont .my-form-box {
+  margin: 0;
+  padding: 0 40px 0 0;
+}
+.page-cont .side-bar {
+  margin: 0 0 0 360px;
+  padding: 0 0 0 40px;
+}
+.page-cont .side-bar h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
+.app-download {
+  line-height: 100%;
+  margin: 24px 0 0 0;
+  padding: 0;
+  color: #b4b4b4;
+}
+.app-download h5 {
+  line-height: inherit;
+  font-size: 14px;
+  margin: 0;
+  padding: 0 0 14px 0;
+  font-weight: normal;
+}
+.app-download .app-code {
+  display: block;
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+}
+.app-download .btn-group {
+  margin: -15px 0 0 100px;
+  padding: 0;
+}
+.app-download .btn-group .link-btn {
+  display: block;
+  line-height: 30px;
+  width: 130px;
+  height: 30px;
+  margin: 15px 0 0 0;
+  padding: 0 0 0 40px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  color: #b4b4b4;
+  position: relative;
+}
+.app-download .btn-group .link-btn-android:after {
+  position: absolute;
+  left: 16px;
+  top: 8px;
+  content: '';
+  width: 14px;
+  height: 26px;
+  background: url(../img/icons-android.png) no-repeat;
+}
+.app-download .btn-group .link-btn-iphone:after {
+  position: absolute;
+  left: 16px;
+  top: 8px;
+  content: '';
+  width: 14px;
+  height: 26px;
+  background: url(../img/icons-iphone.png) no-repeat;
+}
+
+.icons-sprite, .m-from .control-group .controls .icon-eye {
+  background-image: url('../img/icons-s0480c79068.png');
+  background-repeat: no-repeat;
+}
+
+.m-from {
+  margin: 0 0 0 0;
+  padding: 0;
+}
+.m-from input[type="text"],
+.m-from input[type="password"] {
+  line-height: 18px;
+  width: 300px;
+  height: 18px;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+.m-from input[type="text"]:focus,
+.m-from input[type="password"]:focus {
+  border: 1px solid #ffcd5d;
+}
+.m-from .form-group {
+  display: none;
+  overflow: hidden;
+}
+.m-from .control-group {
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+.m-from .control-group .controls-label {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+.m-from .control-group .controls {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.m-from .control-group .controls label {
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.m-from .control-group .controls .mask-text {
+  width: 300px;
+  height: 18px;
+  margin: 0;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.m-from .control-group .controls .icon-eye {
+  background-position: 0 0;
+  height: 11px;
+  width: 18px;
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  cursor: pointer;
+}
+.m-from .control-group .controls .icon-eye:hover, .m-from .control-group .controls .icon-eye.eye-hover {
+  background-position: 0 -11px;
+}
+.m-from .verify-group {
+  overflow: hidden;
+}
+.m-from .verify-group .controls label {
+  display: block;
+  float: left;
+  width: 176px;
+}
+.m-from .verify-group .controls label input[type="text"],
+.m-from .verify-group .controls label input[type="password"] {
+  width: 156px;
+}
+.m-from .verify-group .controls .verify-image,
+.m-from .verify-group .controls .btn-verifyCode {
+  display: block;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+.m-from .verify-group .controls .verify-image {
+  width: 130px;
+  height: 40px;
+  vertical-align: -16px;
+}
+.m-from .verify-group .controls .btn-verifyCode {
+  width: 128px;
+  height: 38px;
+  line-height: 38px;
+  background-color: #d9ecff;
+  border: 1px solid #3b83cb;
+  text-align: center;
+  vertical-align: 0;
+  color: #3b83cb;
+  cursor: pointer;
+}
+.m-from .verify-group .controls .btn-verifyCode:hover {
+  background-color: #3b83cb;
+  color: #fff;
+}
+.m-from .verify-group .controls .btn-verifyCode.btn-verifyCode-dis {
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  color: #666;
+  text-decoration: none;
+  cursor: default;
+}
+.m-from .verify-group .controls .mask-text {
+  width: 156px;
+}
+.m-from .text-group {
+  text-align: right;
+  overflow: hidden;
+}
+.m-from .text-group label {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.m-from .text-group label input[type="checkbox"] {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+.m-from .text-group a {
+  margin: 0;
+  padding: 0;
+  color: #3b83cb;
+}
+.m-from .button-group input[type="button"],
+.m-from .button-group input[type="submit"] {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font: normal 18px/36px "Microsoft Yahei";
+  background-color: #f60;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.m-from .button-group input[type="button"]:hover,
+.m-from .button-group input[type="submit"]:hover {
+  background-color: #f90;
+}
+.m-from .button-group input[type="button"]:focus,
+.m-from .button-group input[type="submit"]:focus {
+  outline: none;
+}
+
+.verify-info {
+  height: 20px;
+  margin-top: 10px;
+  line-height: 20px;
+  display: none;
+  padding-left: 30px;
+  color: #ff5756;
+  background: url(../img/wrong.png) no-repeat 10px center;
+  position: relative;
+  z-index: 99;
+}
+
+.ui-select {
+  position: relative;
+  z-index: 9;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  background: #fff;
+  display: none;
+}
+.ui-select li {
+  line-height: 40px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 10px;
+  color: #333;
+}
+.ui-select li:hover, .ui-select li.current, .ui-select li.mouseon {
+  cursor: pointer;
+  background: #3b84cb;
+  color: #fff;
+}
+
+.t-from {
+  width: 320px;
+  margin: 10px auto 0;
+  overflow: hidden;
+}
+.t-from .form-group {
+  display: block;
+}
+
+.login-column {
+  margin: 10px 0 0;
+  padding: 0;
+  text-align: center;
+}
+.login-column span {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 0;
+  color: #fffefe;
+  font-size: 18px;
+  font-weight: 400;
+}

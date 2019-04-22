@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tj.mapper.ProvinceMapper">
+
+	<resultMap id="BaseResultMapProvinceAll" type="province" >
+	    <id column="pid" property="pid"/>
+	  	<collection property="citylst" ofType="com.po.City" column="pid" select="com.tj.mapper.CityMapper.getByProvId" >
+			 <id column="cid" property="cid"  />
+	  	</collection>
+	  </resultMap>
+	
+	<select id="getProvAll" resultMap="BaseResultMapProvinceAll">
+		select * from province
+	</select>
+	
+	<select id="findByPid" parameterType="int" resultMap="BaseResultMapProvinceAll" >
+		select * from province where pid=#{pid}
+	</select>
+	
+</mapper>

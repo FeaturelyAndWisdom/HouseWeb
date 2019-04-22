@@ -1,0 +1,44 @@
+
+.main-box[data-v-1b1fd10f] {
+  height: 32px;
+  margin-bottom: 20px;
+}
+.main-box ul.switch-box[data-v-1b1fd10f] {
+    height: 32px;
+    line-height: 32px;
+    width: 550px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+}
+.main-box ul.switch-box li[data-v-1b1fd10f] {
+      float: left;
+      position: relative;
+      padding-bottom: 16px;
+      cursor: pointer;
+      font-family: MicrosoftYaHei;
+}
+.main-box ul.switch-box li .badge[data-v-1b1fd10f] {
+        position: absolute;
+        top: 0;
+        right: -16px;
+        background-color: #ff3300;
+        margin-top: -8px;
+        display: inline-block;
+        min-width: 18px;
+        height: 18px;
+        padding: 0 4px;
+        line-height: 18px;
+        text-align: center;
+        color: #ffffff;
+        border-radius: 10px;
+        white-space: nowrap;
+}
+.main-box ul.switch-box li.active[data-v-1b1fd10f] {
+      color: #6e80e3;
+      border-bottom: 2px solid #6e80e3;
+}
+.main-box ul.search-box[data-v-1b1fd10f] {
+    width: 350px;
+}

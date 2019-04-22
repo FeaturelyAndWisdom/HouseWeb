@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tj.mapper.ExtracostMapper">
+	
+	<insert id="addHouseExtInfo" parameterType="housevo">
+		insert into house_extracost(hid,ecid) values(#{house.hid},#{tempcost})
+	</insert>
+	
+	
+	<select id="findByHid" parameterType="int" resultType="extracost">
+		select e.* from house_extracost he,extracost e where he.ecid=e.ecid and hid=#{hid}
+	</select>
+	
+</mapper>

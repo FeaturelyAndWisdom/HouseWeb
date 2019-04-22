@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tj.mapper.AdminMapper">
+	
+	<insert id="add" parameterType="admin">
+		insert into admin(account,pwd,createdate) values(#{account},#{pwd},#{createdate})
+	</insert>
+	
+	<select id="login" parameterType="admin" resultType="admin">
+		select * from admin where account=#{account} and pwd=#{pwd}
+	</select>
+	
+	<update id="changePwd" parameterType="admin">
+		update admin set pwd=#{pwd} where aid=#{aid}
+	</update>
+	
+	<select id="findByAid" parameterType="int" resultType="admin">
+		select * from admin where aid=#{aid}
+	</select>
+</mapper>

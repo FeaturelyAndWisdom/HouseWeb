@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tj.mapper.ServiceTypeMapper">
+	<resultMap type="servicetype" id="baseServiceType">
+		<id column="stid" property="stid"/>
+		<result column="typename" property="typename"/>
+		<collection property="itemlst" ofType="com.po.ServiceItem" column="stid" select="com.tj.mapper.ServiceItemMapper.getItemsByTpid" >
+			 <id column="sid" property="sid"  />
+			 <result column="itemname" property="itemname"  />
+			 <result column="stid" property="stid"  />
+	  	</collection>
+	</resultMap>
+	
+	<select id="findServiceAll" resultMap="baseServiceType">
+		SELECT * FROM servicetype
+	</select>
+</mapper>

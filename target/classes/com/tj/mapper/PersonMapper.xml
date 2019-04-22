@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tj.mapper.PersonMapper">
+	
+	<select id="findByUid" parameterType="int" resultType="person">
+		select * from person where uid=#{uid} and isdel=0
+	</select>
+	
+	<select id="findByPid" parameterType="int" resultType="person">
+		select * from person where pid=#{pid} and isdel=0
+	</select>
+	
+	<insert id="addPerson" parameterType="person">
+		insert into person(name,sex,cardtype,cardid,birthday,tel,uid) values(#{name},#{sex},#{cardtype},#{cardid},#{birthday},#{tel},#{uid})
+	</insert>
+	
+	<delete id="deleteByPid" parameterType="int">
+		<!-- delete from person where pid=#{pid} -->
+		update person set isdel=1 where pid=#{pid}
+	</delete>
+	
+	<update id="updatePer" parameterType="person">
+		update person set name=#{name},sex=#{sex},cardtype=#{cardtype},cardid=#{cardid},birthday=#{birthday},tel=#{tel} where pid=#{pid}
+	</update>
+</mapper>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tj.mapper.CommentMapper">
+
+	<resultMap type="comment" id="baseComment">
+		<id column="commid" property="commid"/>
+		<association property="order" column="oid" javaType="com.tj.po.Orders" select="com.tj.mapper.OrderMapper.getOrderByOid"></association>
+		<association property="cust" column="uid" javaType="com.tj.po.User" select="com.tj.mapper.UserMapper.findById"></association>
+		<association property="seller" column="sellid" javaType="com.tj.po.User" select="com.tj.mapper.UserMapper.findById"></association>
+		<association property="house" column="hid" javaType="com.tj.po.House" select="com.tj.mapper.HouseMapper.findHouseById"></association>
+	</resultMap>
+	
+	<insert id="add" parameterType="comment">
+		insert into comment(oid,hid,uid,content,sellid) values(#{oid},#{hid},#{uid},#{content},#{sellid})
+	</insert>
+	
+	<select id="findCommentByCid" parameterType="int" resultMap="baseComment">
+		select * from comment where commid=#{commid}
+	</select>
+	
+	<select id="findCommsByHid" parameterType="int" resultMap="baseComment">
+		select * from comment where hid=#{hid}
+	</select>
+	
+	<select id="findCommsBySeller" parameterType="int" resultMap="baseComment">
+		select * from comment where sellid=#{sellid}
+	</select>
+	
+	<select id="findCommsByOid" parameterType="int" resultMap="baseComment">
+		select * from comment where oid=#{oid}
+	</select>
+	
+</mapper>

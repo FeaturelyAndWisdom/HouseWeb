@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tj.mapper.HouseimgMapper">
+	
+	<insert id="add" parameterType="housevo">
+		insert into house_img(hid,imgpath) values(#{house.hid},#{filename})
+	</insert>
+	
+	<select id="findByHid" parameterType="int" resultType="houseimg">
+		select * from house_img where hid=#{hid}
+	</select>
+</mapper>

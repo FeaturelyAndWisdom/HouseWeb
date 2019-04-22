@@ -1,0 +1,191 @@
+/* line 2, ../sass/page.userinfo.scss */
+.user-cont {
+  font-size: 14px;
+}
+/* line 4, ../sass/page.userinfo.scss */
+.user-cont .user-pic {
+  display: block;
+  float: left;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor:pointer;
+}
+/* line 11, ../sass/page.userinfo.scss */
+.user-cont .info-group {
+  margin-left: 130px;
+}
+/* line 13, ../sass/page.userinfo.scss */
+.user-cont .info-group .item-box {
+  line-height: 2.2;
+}
+/* line 15, ../sass/page.userinfo.scss */
+.user-cont .info-group .item-box .emphasize-text {
+  font-weight: bold;
+}
+/* line 18, ../sass/page.userinfo.scss */
+.user-cont .info-group .item-box .link-btn {
+  margin: 0 5px;
+  color: #3b83cb;
+  text-decoration: none;
+}
+/* line 22, ../sass/page.userinfo.scss */
+.user-cont .info-group .item-box .link-btn:hover {
+  text-decoration: underline;
+}
+/* line 26, ../sass/page.userinfo.scss */
+.user-cont .info-group .item-box [class^="icons"] {
+  display: inline-block;
+  vertical-align: -3px;
+}
+
+/* line 33, ../sass/page.userinfo.scss */
+.zhimacredit-cont {
+  font-size: 14px;
+  line-height: 1.8;
+  overflow: hidden;
+}
+/* line 37, ../sass/page.userinfo.scss */
+.zhimacredit-cont .info-box {
+  float: left;
+  width: 460px;
+}
+/* line 40, ../sass/page.userinfo.scss */
+.zhimacredit-cont .info-box h2 {
+  float: left;
+  width: 100px;
+  text-align: right;
+}
+/* line 45, ../sass/page.userinfo.scss */
+.zhimacredit-cont .info-box .text-box {
+  margin-left: 130px;
+}
+/* line 48, ../sass/page.userinfo.scss */
+.zhimacredit-cont .info-box .text-muted {
+  color: #999;
+  font-size: 12px;
+}
+/* line 53, ../sass/page.userinfo.scss */
+.zhimacredit-cont .info-box a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #3b83cb;
+  text-decoration: none;
+}
+/* line 58, ../sass/page.userinfo.scss */
+.zhimacredit-cont .info-box a:hover {
+  text-decoration: underline;
+}
+/* line 61, ../sass/page.userinfo.scss */
+.zhimacredit-cont .info-box .btn-box a.link-btn {
+  line-height: 30px;
+  width: 114px;
+  height: 30px;
+  text-align: center;
+  background-color: #f60;
+  color: #fff;
+  border-radius: 3px;
+}
+/* line 69, ../sass/page.userinfo.scss */
+.zhimacredit-cont .info-box .btn-box a.link-btn:hover {
+  background-color: #f90;
+}
+/* line 76, ../sass/page.userinfo.scss */
+.zhimacredit-cont .chart-box {
+  float: right;
+  width: 166px;
+  height: 80px;
+  padding-top: 36px;
+  padding-bottom:1px\0;  /*����ie89*/
+  background: url(../Images/chart.png) no-repeat;
+}
+/* line 82, ../sass/page.userinfo.scss */
+.zhimacredit-cont .chart-box span {
+  line-height: 100%;
+  display: block;
+  text-align: center;
+  color: #5dd0b9;
+}
+/* line 87, ../sass/page.userinfo.scss */
+.zhimacredit-cont .chart-box span.number-box {
+  font-family: Tahoma;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 6px 0;
+}
+
+/* line 100, ../sass/page.userinfo.scss */
+.info-form .control-group.city-group .m-select-value, .info-form .control-group.deta-group .m-select-value {
+  width: 80px;
+}
+/* line 105, ../sass/page.userinfo.scss */
+.info-form .control-group.sex-group .controls label {
+  display: inline-block;
+  width: 66px;
+}
+/* line 111, ../sass/page.userinfo.scss */
+.info-form .m-select-value {
+  line-height: 18px;
+  width: 258px;
+  height: 18px;
+  padding: 5px;
+  border-radius: 3px;
+  outline: none;
+}
+
+/* pop form style */
+/* line 125, ../sass/page.userinfo.scss */
+.pop-form .control-group .controls-label {
+  width: 80px;
+}
+/* line 128, ../sass/page.userinfo.scss */
+.pop-form .control-group .controls {
+  margin-left: 100px;
+}
+/* line 131, ../sass/page.userinfo.scss */
+.pop-form .control-group .current-value {
+  display: inline-block;
+  line-height: 32px;
+  width: auto;
+  height: 32px;
+}
+/* line 138, ../sass/page.userinfo.scss */
+.pop-form .verify-btn {
+  line-height: 24px;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+/* line 144, ../sass/page.userinfo.scss */
+.m-pop {
+  display: none;
+}
+
+.interest-box {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+
+    margin-top: 8px;
+    padding: 0 22px 0 8px;
+    background: #f8f8f8;
+    line-height: 20px;
+    border: 1px solid #ddd;
+}
+.its-close-a {
+    color: #ccc;
+}
+.its-close {
+    position: absolute;
+    right: 6px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    line-height: 10px;
+    text-align: center;
+}
+.ad-warn {
+    font-size: 12px;
+    margin-left: 10px;
+    color: #999;
+}

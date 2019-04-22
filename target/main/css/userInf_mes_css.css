@@ -1,0 +1,41 @@
+/* line 2, ../sass/page.notices.scss */
+.notices-list {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+}
+/* line 5, ../sass/page.notices.scss */
+.notices-list ul {
+  overflow: hidden;
+}
+/* line 8, ../sass/page.notices.scss */
+.notices-list li {
+  margin-top: -1px;
+  padding: 15px 20px;
+  border-top: 1px solid #ddd;
+}
+/* line 12, ../sass/page.notices.scss */
+.notices-list li h2 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+}
+/* line 16, ../sass/page.notices.scss */
+.notices-list li h2 span {
+  float: right;
+  color: #999;
+  font-weight: normal;
+}
+/* line 22, ../sass/page.notices.scss */
+.notices-list li .text-box {
+  margin-top: 10px;
+  color: #666;
+}
+/* line 25, ../sass/page.notices.scss */
+.notices-list li .text-box a {
+  color: #3b83cb;
+}
+
+/* line 31, ../sass/page.notices.scss */
+.page-box {
+  margin-top: 20px;
+}

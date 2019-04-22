@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tj.mapper.MessageMapper">
+	
+	<select id="findCustMesByUid" parameterType="int" resultType="message">
+		select * from message where uid=#{uid} and type=0 order by senddate desc
+	</select>
+	
+	<select id="findSellerMesByUid" parameterType="int" resultType="message">
+		select * from message where uid=#{uid} and type=1 order by senddate desc
+	</select>
+	
+	<insert id="sendMess" parameterType="message">
+		insert into message(title,content,senddate,type,uid,sender) values(#{title},#{content},#{senddate},#{type},#{uid},#{sender})
+	</insert>
+	
+	<update id="readCustMes" parameterType="int">
+		update message set state=1 where type=0 and uid=#{uid}
+	</update>
+	
+	<update id="readSellMes" parameterType="int">
+		update message set state=1 where type=1 and uid=#{uid} 
+	</update>
+</mapper>

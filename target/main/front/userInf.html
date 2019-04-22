@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>用户信息</title>
+<link rel="stylesheet" type="text/css" href="../css/userInf_css.css"/>
+<link rel="stylesheet" type="text/css" href="../css/member_common_css.css"/>
+</head>
+
+<body>
+	<!--header-->
+    <div class="hd-wrap-fluid ">
+        <div class="m-hd">
+            <div class="site-logo-cont">
+                <a href="https://www.tujia.com/" target="_blank" title="途家网首页" class="site-logo">途家网</a>
+                <span class="logo-text">旅途中的家</span>
+            </div>
+            <div class="nav-list">
+                <ul>
+             <li class="first"><a href="https://www.tujia.com/" class="home-link " target="_blank">首页</a></li>
+                  <li><a href="javascript:;" target="_blank">发现</a></li>
+                </ul>
+            </div>
+            <div class="sub-link">        
+            <a href="javascript:;" rel="nofollow" class="mytujia" id="mytujiamenu">我的途家</a>        
+            <a href="javascript:;" rel="nofollow" class="logout-btn">[退出]</a>        
+            <a href="javascript:;" target="_blank" rel="nofollow" id="mercantujiamenu" >商户系统</a>
+            <div id="mytujia" class="dn tl" style="display: none">    
+            <div class="mytujiaWrapper" id="userMessage">        
+            <div class="p20">            
+            <img src="../img/loader.gif">        </div></div></div>
+            </div>
+        </div>
+    </div>
+    <!--end header-->
+    <div class="container_24">
+        <div class="m-directory">
+            <a href="https://www.tujia.com">途家网</a><span>&gt;</span>
+            <a href="https://vip.tujia.com/UserInfo/OrderList">我的途家</a><span>&gt;</span>
+        </div>
+    </div>
+    
+    <!--body-->
+    	<div class="container_24 clearfix" id="orderWrapper">
+        	<!--left-->
+            <div class="grid_5">
+                <div class="m-menu">
+                    <div class="user-group">
+                        <img src="../img/user-default.png" alt="" width="60" height="60" class="user-pic">
+                        <div class="user-group-info">
+                            <a href="javascript:;" class="user-name">
+                                159****3280
+                            </a>
+                            <p><a href="https://vip.tujia.com/UserInfo/Info" onclick="_gaq.push(['_trackEvent', 'pcUserInfo', '修改个人资料']);" class="link-btn">修改个人资料</a></p>
+                        </div>
+                    </div>
+                    <div class="menu-group">
+                        <h2 class="menu-name"><i class="icons-manage"></i>我的订单</h2>
+                        <ul class="menu-list">
+                            <li><a id="myorders" href="javascript:;" class="current">订单管理</a></li>
+                                <li>
+                                    <a id="mycomments" href="javascript:;">
+                                        点评管理
+                                    </a>
+                                </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="menu-group">
+                        <h2 class="menu-name"><i class="icons-user"></i>个人中心</h2>
+                        <ul class="menu-list">
+                 			<li><a id="myUserInfoInfo" href="javascript:;">个人资料</a></li>
+                            <li><a id="mypassword" href="javascript:;">修改密码</a></li>
+                            <li><a id="myfavorite" href="javascript:;">我的收藏</a></li>
+                            <li><a id="myfavorite" href="javascript:;">常用入住人</a></li>
+                            <li><a href="javascript:;">消息</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="menu-group">
+                        <h2 class="menu-name"><i class="icons-manage"></i>房屋管理</h2>
+                        <ul class="menu-list">
+                 			<li><a id="myUserInfoInfo" href="javascript:;">我的房屋</a></li>
+                            <li><a id="mypassword" href="javascript:;">房屋订单</a></li>
+                            <li><a id="myfavorite" href="javascript:;">房屋管理</a></li>
+                            <li><a id="myfavorite" href="javascript:;">价格管理</a></li>
+                        </ul>
+                    </div>
+                
+                </div>
+                        </div>
+            <!--end left-->
+        </div>
+    <!--end body-->
+</body>
+</html>

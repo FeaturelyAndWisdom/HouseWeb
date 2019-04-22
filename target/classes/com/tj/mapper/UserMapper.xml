@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tj.mapper.UserMapper">
+
+	<select id="login" parameterType="user" resultType="user">
+		select * from user where email = #{email} and pwd = #{pwd}
+	</select>
+	
+	<insert id="add" parameterType="user">
+		insert into user(uname,pwd,tel,email,regdate) values(#{uname},#{pwd},#{tel},#{email},#{regdate})
+	</insert>
+	
+	<select id="vildEmail" parameterType="string" resultType="int">
+		select count(*) from user where email = #{email} 
+	</select>
+	
+	<update id="changeUname" parameterType="user">
+		update user set uname=#{uname} where uid=#{uid}
+	</update>
+	
+	<select id="findById" parameterType="int" resultType="user" >
+		select * from user where uid=#{uid}
+	</select>
+	
+	<update id="changeEmail" parameterType="user">
+		update user set email=#{email} where uid=#{uid}
+	</update>
+	
+	<update id="updateInfo" parameterType="user">
+		update user set realname=#{realname},home_prov=#{home_prov},home_city=#{home_city},live_prov=#{live_prov},live_city=#{live_city},edu=#{edu},job=#{job},sex=#{sex},birthday=#{birthday} where uid=#{uid}
+	</update>
+	
+	<update id="changePwd" parameterType="user">
+		update user set pwd=#{pwd} where uid=#{uid}
+	</update>
+	
+	<update id="changeIcon" parameterType="user">
+		update user set uimg=#{uimg} where uid=#{uid}
+	</update>
+	
+	<select id="findAllUsers" resultType="user">
+		select * from user
+	</select>
+	
+	<update id="banuser" parameterType="int">
+		update user set isdel=1 where uid=#{uid}
+	</update>
+	
+	<update id="reopenuser" parameterType="int">
+		update user set isdel=0 where uid=#{uid}
+	</update>
+	
+</mapper>

@@ -1,0 +1,33 @@
+.detailWraper {
+			margin-top: -1px;
+			border: 1px solid #dddddd;
+			font-size: 12px;
+			color: #333;
+			padding: 20px;
+			margin-bottom: 20px;
+			zoom: 1;
+			background-color: #fff;
+		}
+		ul, li {
+		    margin: 0;
+		    padding: 0;
+		    list-style: none;
+		}
+		.messageList li {
+		    border-bottom: 1px solid #ddd;
+		    margin-bottom: 10px;
+		}
+		.messageList li .title {
+		    margin-bottom: 10px;
+		}
+		.messageList li .title h6 {
+		    font-size: 14px;
+		    line-height: 1.8em;
+		    font-weight: 600;
+		}
+		.text-muted, .text-muted a {
+		    color: #999;
+		}
+		.messageList li .content {
+		    margin-bottom: 20px;
+		}

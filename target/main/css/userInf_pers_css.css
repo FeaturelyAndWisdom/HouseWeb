@@ -1,0 +1,232 @@
+.wrapper {
+	width: 1190px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+.pb-tit {
+	margin-top: 40px;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	font: bold 16px/1 "Microsoft Yahei";
+	color: #ff6600
+}
+.pb-tab table {
+	width: 100%;
+	border: 1px solid #f1f1f1;
+}
+.pb-tab td , .pb-tab th {
+	vertical-align: middle;
+	text-align: left;
+}
+.pb-tab thead {
+	border: 1px solid #f1f1f1;
+}
+.pb-tab thead th {
+	height: 36px;
+    background: #f8f8f8;
+    font: 12px/36px "Microsoft Yahei";
+    color: #999;
+}
+.pb-tab tbody td {
+    height: 38px;
+    border-bottom: 1px dashed #ddd;
+}
+.tr-td1 {
+	padding-left: 20px;
+}
+.ck-box {
+	margin-right: 3px;
+}
+.alink {
+	color: #3b83cb;
+}
+.edit-alink {
+	margin-right: 10px;
+}
+.pb-btn a {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 0 20px;
+	background: #fff;
+	border: 1px solid #dfdfdf;
+	border-radius: 3px;
+	line-height: 28px;
+}
+.add-btn {
+	margin-right: 10px;
+}
+.as {
+	margin-right: 2px;
+	font-size: 16px;
+    font-weight: bold;
+    color: #ff6600;
+}
+.pb-btn a:hover {
+	text-decoration: none;
+	border: 1px solid #ffa111;
+}
+
+/* 弹层部分 */
+.w410 {
+	margin: 0 auto;
+	width: 410px;
+}
+.pop-outer {
+	display: table;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.3;
+	filter:alpha(opacity=30);
+}
+.pop-inner {
+	display: table-cell;
+	vertical-align: middle;
+}
+.pop-tit {
+	position: relative;
+	padding-left: 20px;
+	height: 36px;
+	background: #f3f3f3;
+	border: 1px solid #ddd;
+	line-height: 36px;
+	font-size: 16px;
+	color: #61666e;
+}
+.pop-body {
+	padding: 24px 0 30px 0;
+	background: #fff;
+}
+.close-btn {
+	position: absolute;
+	right: 20px;
+	top: 6px;
+	font-size: 22px;
+	line-height: 1;
+	color: #999;
+}
+.lb-box {
+	float: left;
+	margin-right: 5px;
+	width: 100px;
+	font-size: 14px;
+	line-height: 28px;
+	text-align: right;
+}
+.input-box {
+	padding: 4px 6px;
+	width: 246px;
+	/* height: 18px; */
+	background: #fff;
+	border: 1px solid #ddd;
+	line-height: 16px;
+}
+.input-box.active {
+	border: 1px solid #ffcd5d;
+}
+.dot {
+	color: #ff1414;
+}
+.mtop {
+	margin-top: 20px;
+}
+/* 下拉框 */
+.u-drop-down {
+	display: inline-block;
+	vertical-align: middle;
+	height: 28px;
+	overflow: hidden;
+	text-align: left;
+}
+.u-dd-result {
+	position: relative;
+	display: inline-block;
+	padding-left: 10px;
+	width: 246px;
+	border: 1px solid #ddd;
+	line-height: 26px;
+}
+.u-dd-triangle {
+	position: absolute;
+	right: 13px;
+	top: 12px;
+	width: 0;
+	height: 0;
+	border-style: solid dashed dashed dashed;
+	border-color: #ff6600 transparent transparent transparent;
+	border-width: 4px 4px 0 4px;
+}
+.u-dd-result.active , .u-dd-result:hover {
+	border: 1px solid #ffcd5d;
+	text-decoration: none;
+}
+.u-dd-result.active .u-dd-triangle , .u-dd-result:hover .u-dd-triangle {
+	border-style: dashed dashed solid dashed;
+	border-color: transparent transparent #ff6600 transparent;
+	border-width: 0 4px 4px 4px;
+}
+.u-dd-lis {
+	position: relative;
+	margin-top: -1px;
+	border: 1px solid #ddd;
+	width: 256px;
+	background: #fff;
+}
+.u-dd-lis li a {
+	display: block;
+	padding-left: 10px;
+	line-height: 28px;
+}
+.u-dd-lis li.active a , .u-dd-lis li a:hover {
+	background: #ff8533;
+	color: #fff;
+	text-decoration: none;
+} 
+/* 按钮公共属性 */
+.u-btn {
+	display: inline-block;
+	padding: 0 30px;
+	border-radius: 3px; 
+	line-height: 30px;
+	font-size: 14px;
+	color: #fff;
+}
+.y-btn {
+	background: #ff6600;
+}
+.d-btn {
+	background: #3b83cb;
+}
+.u-btn:hover {
+	text-decoration: none;
+}
+.y-btn:hover {
+	background: #ff9900;
+}
+.d-btn:hover {
+	background: #3677d2;
+}
+/* 按钮单独属性 */
+.save-btn {
+	margin-left: 105px;
+}
+.ok-btn {
+	margin-right: 10px;
+}
+.del-wrap {
+	text-align: center;
+}
+.del-info {
+	margin-bottom: 30px;
+	font-size: 14px;
+}
+.del-user {
+	margin: 0 3px;
+	font-weight: bold;
+}
+

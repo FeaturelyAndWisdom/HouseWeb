@@ -1,0 +1,319 @@
+/* CSS Document */
+
+@charset "UTF-8";
+.icon-warning {
+  background-image: url(~page-orderlist.png);
+  background-position: -92px -38px;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  margin-bottom: -2px;
+  margin-right: 2px;
+}
+.order-manager {
+  border: 1px solid #ddd;
+}
+.order-manager .main-operate {
+    padding: 20px;
+}
+.order-manager .main-operate h4 {
+      font-size: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 20px;
+}
+.order-manager .main-operate .tag-box {
+      padding-top: 10px;
+      padding-bottom: 20px;
+}
+.order-manager .main-operate .tag-box .ivu-tag {
+        background-color: #6e80e3;
+}
+.order-manager .empty-order {
+    background-image: url(../img/empty_order.png);
+    background-position: 0px 0px;
+    width: 88px;
+    height: 88px;
+    display: block;
+    margin: 300px auto 480px auto;
+    position: relative;
+}
+.order-manager .empty-order::before {
+      content: '暂无相关订单';
+      display: inline-block;
+      position: absolute;
+      font-size: 16px;
+      width: 200px;
+      bottom: -25px;
+      color: #999999;
+}
+.order-manager .page-box {
+    border-top: 1px solid #ddd;
+    padding: 25px 20px 25px 0;
+}
+.order-manager .page-box .pageItem li {
+      min-width: 28px;
+      height: 28px;
+      line-height: 26px;
+}
+.radio-item {
+  display: block;
+  margin: 5px 0px;
+}
+.refuse-tip {
+  padding: 10px 0;
+  color: #a7a7a7;
+}
+.modify-price {
+  color: #333;
+}
+.modify-price .status-tip {
+    height: 46px;
+    line-height: 46px;
+    background-color: #fffbf6;
+    border: 1px solid #f5debf;
+    border-left: none;
+    border-right: none;
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-left: 20px;
+}
+.modify-price .status-tip .time {
+      color: #ff724e;
+      display: inline-block;
+}
+.modify-price .total-cost {
+    padding-top: 24px;
+}
+.modify-price .total-cost .money {
+      color: #ff633b;
+}
+.modify-price .discount {
+    padding: 4px 0;
+}
+.modify-price .discount .gray {
+      padding-left: 10px;
+      color: #a7a7a7;
+}
+.modify-price .discount-val {
+    padding: 8px 0px;
+    position: relative;
+}
+.modify-price .discount-val::after {
+      content: '元';
+      display: inline-block;
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      margin-top: -10px;
+}
+.modify-price .discount-val .ivu-input {
+      padding-right: 28px;
+      position: relative;
+}
+.modify-price .warn {
+    color: #ff724e;
+}
+.modify-price .modify-tip {
+    color: #999999;
+    padding: 5px 0px;
+}
+.modify-price .modify-attention .ivu-poptip-content {
+    width: 170px;
+    text-align: left;
+}
+.modify-price .modify-attention .ivu-poptip-content i {
+      display: none;
+}
+.modify-price .modify-attention .ivu-poptip-content .ivu-poptip-body-message {
+      padding: 0;
+}
+.modify-price .modify-attention .ivu-poptip-content .ivu-btn-text {
+      border: 1px solid #ddd;
+}
+.modify-price .modify-attention .ivu-poptip-content .ivu-btn-text:hover {
+        border-color: #6e80e3;
+}
+.oprate-deposit p {
+  line-height: 20px;
+  padding: 5px 0;
+}
+.oprate-deposit .deposit-val {
+  position: relative;
+}
+.oprate-deposit .deposit-val::after {
+    content: '元';
+    display: inline-block;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    margin-top: -10px;
+}
+.oprate-deposit .deposit-val .ivu-input {
+    padding-right: 28px;
+    position: relative;
+}
+.oprate-deposit .ivu-form-item {
+  margin: 0px;
+}
+.oprate-deposit .ivu-form-item .radio-item {
+    line-height: 22px;
+}
+.oprate-deposit .ivu-form-item-error {
+  margin-bottom: 10px;
+}
+.oprate-deposit .icon-warning {
+  margin-right: 5px;
+}
+.refuse-order .ivu-form-item {
+  margin: 0px;
+}
+.refuse-order .ivu-form-item .radio-item {
+    line-height: 22px;
+}
+.refuse-order .ivu-form-item-error {
+  margin-bottom: 10px;
+}
+.refuse-order .icon-warning {
+  margin-right: 5px;
+}
+.insurance-modal {
+  text-align: left;
+}
+.insurance-modal .header-title {
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    padding-left: 6px;
+}
+.insurance-modal .header-context {
+    text-align: left;
+    font-size: 12px;
+    padding-left: 6px;
+}
+.insurance-modal .submit-form .instructions {
+    display: block;
+    width: 144px;
+    color: #6e80e3;
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 0 16px 10px 7px;
+}
+.insurance-modal .submit-form .insurance-item .ivu-form-item-label {
+    padding-right: 0px;
+}
+.insurance-modal .submit-form .ivu-form-item-label {
+    font-family: 'MicrosoftYaHei';
+    font-size: 12px;
+    color: #333;
+}
+.ivu-modal-header {
+  background-color: #f5f5f5;
+  border-radius: 4px 4px 0px 0px;
+}
+.qrcode {
+  height: 100px;
+  padding: 0;
+  background: #f9f9f9;
+  position: relative;
+  width: 560px;
+  margin-top: 21px;
+}
+.qrcode .qrcode-img {
+    float: left;
+    margin-left: 16px;
+    margin-top: 20px;
+}
+.qrcode .qrcode-img img {
+      width: 60px;
+      height: 60px;
+}
+.qrcode .qrcode-title {
+    float: left;
+    margin-top: 25px;
+    margin-left: 12px;
+}
+.qrcode .qrcode-title p {
+      padding-left: 0;
+}
+.qrcode .qrcode-title p:first-child {
+      font-family: 'PingFangSC-Regular';
+      font-size: 18px;
+      color: #171717;
+}
+.footer-module {
+  text-align: left;
+  padding-left: 4px;
+}
+.ivu-form-item-error .ivu-input {
+  border: 1px solid #ed3f14;
+  border-radius: 4px;
+}
+.insurance-modal .insurance-form .ivu-form-item-error {
+  margin-bottom: 0;
+}
+.insurance-dialog .insurance-item .ivu-modal-footer {
+  padding-left: 32px;
+}
+.submit-form .formItem-line {
+  position: relative;
+  margin-bottom: 24px;
+}
+.submit-form .formItem-line .label-title {
+    position: absolute;
+    left: -60px;
+    font-family: 'MicrosoftYaHei';
+    font-size: 12px;
+    color: #333;
+}
+.submit-form .last-formItem {
+  margin-bottom: 0;
+}
+.submit-form .insurance-item {
+  padding: 0px 16px 0 6px;
+}
+.submit-form .houseTip {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  line-height: 1;
+  padding-top: 6px;
+  color: #ed3f14;
+}
+.display-form {
+  margin-top: 18px;
+}
+.display-form p {
+    padding-left: 22px;
+}
+.display-form .housenumber-item {
+    margin-bottom: 18px !important;
+}
+.display-form .insurance-item {
+    padding: 0px 22px;
+    margin-bottom: 6px;
+}
+.display-form .instructions {
+    padding-left: 22px;
+    margin-top: 10px;
+}
+.display-form .phone {
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+p.insurance-num {
+  margin-left: -53px;
+  padding-left: 0;
+  font-family: 'MicrosoftYaHei';
+  font-size: 12px;
+  color: #333;
+}
+.show-insuranceinfo .ivu-modal-body {
+  padding: 0;
+}
+.show-insuranceinfo .ivu-modal-body .repeat-form {
+    border-bottom: 1px solid #f5f5f5;
+    position: relative;
+}
+
+

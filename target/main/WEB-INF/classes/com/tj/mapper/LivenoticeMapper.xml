@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tj.mapper.LivenoticeMapper">
+
+	<insert id="addHouseNotInfo" parameterType="housevo">
+		insert into house_livenotice(hid,lnid) values(#{house.hid},#{tempnotice})
+	</insert>
+
+	<select id="findByHid" parameterType="int" resultType="livenotice">
+		select l.* from house_livenotice hl,livenotice l where hl.lnid=l.lnid and hid=#{hid}
+	</select>
+</mapper>
